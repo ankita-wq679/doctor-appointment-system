@@ -1,6 +1,3 @@
-# doctor-appointment-system
-A secure web application built with Django that automates medical scheduling, allowing patients to book dynamic time slots and doctors to manage appointments.
-
 # Online Doctor's Appointment System 🩺
 Welcome to the Online Doctor's Appointment System! This is a backend-heavy web application built using **Django** (Python framework). It is designed to solve the real-world problem of managing hospital/clinic bookings, replacing manual paperwork with a smooth digital experience.
 
