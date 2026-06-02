@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">  
+</head>
+<body>
+
+
+<div class="dashboard" style="max-width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBGZSjEYEv2Y1fCCn08Lo6lxYSIUSPxp2zg&ss" style="width:100%">
+  <img class="mySlides" src="https://aihms.in/blog/wp-content/uploads/2020/12/medical-t2.jpg" style="width:100%">
+   <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuST5JZ2bo_se8P7lZZbTX4xk4XobR59RCg&s" style="width:100%">
+   <img class="mySlides" src="https://www.shutterstock.com/image-photo/name-medical-term-doctor-stethoscope-260nw-243860437.jpg" style="width:100%">
+
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) 
+  {
+    myIndex = 1
+  }    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <style>
+    body {
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }   
+
+    .dashboard img{
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        padding-bottom:10px;
+    }
+    </style>
+</body></html>
+
